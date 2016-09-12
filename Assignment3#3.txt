@@ -1,0 +1,31 @@
+//James Gutierrez
+//Assignment 3
+//9/12
+//v1
+//Calculates the total amount of money input by user in pennies
+
+#include <iostream>
+
+using namespace std;
+
+int dollars; //all the variables that are required by the program
+int quarters;
+int dimes;
+int nickels;
+int pennies;
+
+int main(){
+    cout << "Please type an amount of dollars, quarters, dimes, nickels and pennies in that order." << endl; //prompt user to input values
+    cin >> dollars >> quarters >> dimes >> nickels >> pennies; //user input
+    int penny_dollars = dollars * 100; //the variables of the user input translated into pennies
+    int penny_quarters = quarters * 25;
+    int penny_dimes = dimes * 10;
+    int penny_nickels = nickels * 5;
+    int total_money = penny_dollars + penny_quarters + penny_dimes + penny_nickels + pennies;
+    cout << "The amount of money you entered in pennies is " << total_money << endl;
+    cout << "the amount of dollars you have in pennies is " << penny_dollars << endl;
+    cout << "the amount of quarters you have in pennies is " << penny_quarters << endl;
+    cout << "the amount of dimes you have in pennies is " << penny_dimes << endl;
+    cout << "the amount of nickels you have in pennies is " << penny_nickels << endl; //the final output of the total amount of money in pennies, and the individual amount in pennies.
+return 0;
+}
